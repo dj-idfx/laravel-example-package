@@ -6,13 +6,17 @@ use Illuminate\Console\Command;
 
 class ExampleCommand extends Command
 {
-    public $signature = 'laravel-example-package';
+    public $signature = 'example-package';
 
     public $description = 'My command';
 
     public function handle(): int
     {
-        $this->comment('All done');
+        $commandOutput = config('example-package.command_output');
+
+        $this->comment($commandOutput);
+
+        $this->comment('All done!');
 
         return self::SUCCESS;
     }

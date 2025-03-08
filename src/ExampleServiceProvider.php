@@ -17,10 +17,10 @@ class ExampleServiceProvider extends PackageServiceProvider
          */
 
         $package
-            ->name('laravel-example-package')
+            ->name('example-package')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_example_package_table')
+//            ->hasViews()
+//            ->hasMigration('example_package_table')
             ->hasCommand(ExampleCommand::class);
     }
 }
