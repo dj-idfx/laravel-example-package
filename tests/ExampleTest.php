@@ -2,6 +2,7 @@
 
 use Idfx\Example\Commands\ExampleCommand;
 use Illuminate\Console\Command;
+
 use function Pest\Laravel\artisan;
 
 it('can test', function () {
