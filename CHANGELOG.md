@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-example-package` will be documented in this file.
 
+## 0.2.1 - 2025-03-09
+
+Added View
+
 ## 0.2.0 - 2025-03-09
 
 Added Controller and Route
