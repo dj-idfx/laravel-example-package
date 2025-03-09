@@ -20,7 +20,7 @@ class ExampleServiceProvider extends PackageServiceProvider
             ->name('example-package')
             ->hasConfigFile()
 //            ->hasViews()
-//            ->hasMigration('example_package_table')
+            ->hasMigration('create_my_models_table')
             ->hasCommand(ExampleCommand::class);
     }
 }
