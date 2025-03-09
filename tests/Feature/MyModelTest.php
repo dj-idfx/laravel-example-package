@@ -8,7 +8,6 @@ it('can create a model from factory', function () {
     $this->assertModelExists($myModel);
 });
 
-
 it('can return the uppercased value of a name', function () {
     $myModel = MyModel::factory()->create(['name' => 'John Doe']);
 
