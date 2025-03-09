@@ -9,7 +9,14 @@ class MyModel extends Model
 {
     use HasFactory;
 
+    private string $name;
+
     public $guarded = [];
+
+    public function getName(string $name): void
+    {
+        $this->name = $name;
+    }
 
     public function getUppercasedName(): string
     {
