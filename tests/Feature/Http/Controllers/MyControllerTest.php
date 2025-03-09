@@ -6,5 +6,5 @@ it('has a route', function () {
     $this
         ->get(action([MyController::class, 'index']))
         ->assertOk()
-        ->assertSee('ok');
+        ->assertSee('Hi from the view in the example package');
 });
