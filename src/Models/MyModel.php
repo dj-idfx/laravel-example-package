@@ -9,14 +9,7 @@ class MyModel extends Model
 {
     use HasFactory;
 
-    private string $name;
-
     public $guarded = [];
-
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
 
     public function getName(): string
     {
